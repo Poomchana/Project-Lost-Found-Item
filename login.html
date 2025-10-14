@@ -11,10 +11,7 @@
   <div id="login" class="page">
     <div class="auth-container">
 
-      <!-- ปุ่มกลับหน้าหลัก -->
-      <button class="back-btn" onclick="showPage('homepage')">
-        ← กลับหน้าหลัก
-      </button>
+      <button class="back-btn" onclick="showPage('homepage')">←</button>
 
       <div class="auth-form">
         <h2 class="auth-title">เข้าสู่ระบบ</h2>
@@ -39,47 +36,13 @@
           <button type="submit" class="btn-primary">เข้าสู่ระบบ</button>
         </form>
 
-        
-          <div class="divider vertical">
-            <span>หรือสมัครสมาชิกด้วย</span>
-          </div>
-
-        <div class="form-column">
-            <div class="social-buttons">
-          <button class="btn-social facebook">
-                <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-09-05/9FW0g43uRp.png" alt="Facebook">
-                เข้าสู่ระบบด้วย Facebook
-              </button>
-
-           <button class="btn-social google">
-                <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-09-05/soi5zQJ9Xw.png" alt="Google">
-                เข้าสู่ระบบด้วย Google
-              </button>
-
-            </div>
         <div class="auth-links">
-          <p>ไม่ใช่สมาชิก ? <a href="#" onclick="showPage('register')">สมัครสมาชิก</a></p>
           <p><a href="#">ลืมรหัสผ่าน ?</a></p>
         </div>
       </div>
     </div>
   </div>
 
-  <script>
-    function togglePassword(id, btn) {
-      const input = document.getElementById(id);
-      if (input.type === "password") {
-        input.type = "text";
-        btn.textContent = "🙈";
-      } else {
-        input.type = "password";
-        btn.textContent = "👁";
-      }
-    }
-  </script>
- <script src="login.js"></script>
-</body>
-</html>
-
+  <script src="login.js"></script>
 </body>
 </html>

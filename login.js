@@ -3,6 +3,7 @@ const loginForm = document.querySelector('.login-form');
 if (loginForm) {
   loginForm.addEventListener('submit', function(e) {
     e.preventDefault();
+    // สมมติว่ามีการเรียกใช้ฟังก์ชัน showModal และ showPage ที่อื่น
     showModal('เข้าสู่ระบบสำเร็จ !');
     setTimeout(() => {
       closeModal();
@@ -18,6 +19,6 @@ function togglePassword(inputId, el) {
     el.textContent = '🙈';    // เปลี่ยนเป็น “ตาหลับ”
   } else {
     input.type = 'password';
-    el.textContent = '👁‍🗨'; // เปลี่ยนกลับเป็น “ตาเปิด”
+    el.textContent = '👁'; // เปลี่ยนกลับเป็น “ตาเปิด”
   }
 }
