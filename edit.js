@@ -28,8 +28,8 @@ function saveData() {
 
   // เก็บข้อมูลใหม่ไว้ใน localStorage
   localStorage.setItem("editItem", JSON.stringify(updated));
+  
 
-  // ✅ สร้าง flag แจ้งว่า “มีการอัปเดตข้อมูลแล้ว”
   localStorage.setItem("editUpdated", "true");
 
   
