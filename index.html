@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lost & Found - ของหายได้คืน</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <header class="header-nav shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="logo-area">
+        <img src="pictures/logo.png" alt="Logo" class="logo-img">
+        <h1 class="logo-text">Lost & Found</h1>
+      </div>
+      <div class="user-actions">
+        <button class="btn btn-light">เข้าสู่ระบบ</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <div class="action-links-wrapper">
+      <a href="#" class="action-link shadow-sm">
+        <i class="fa-solid fa-hands-holding-circle icon"></i>
+        <span>แจ้งของที่เจอ</span>
+      </a>
+      <a href="#" class="action-link shadow-sm">
+        <i class="fa-solid fa-magnifying-glass icon"></i>
+        <span>แจ้งของหาย</span>
+      </a>
+    </div>
+
+    <div class="section-header">
+      <h3 class="fw-bold">รายการล่าสุด</h3>
+      <div class="header-line"></div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="item-card">
+          <div class="card-img-placeholder">
+            <i class="fa-solid fa-headphones-simple fa-3x text-muted"></i>
+          </div>
+          <div class="card-content">
+            <h5 class="card-title">หูฟัง</h5>
+            <p class="card-location"><i class="fa-solid fa-location-dot me-2"></i>โรงอาหาร</p>
+            <p class="card-date text-muted"><i class="fa-solid fa-calendar-days me-2"></i>01/03/2568</p>
+            <button class="btn btn-primary w-100" onclick="contact()">ดูรายละเอียด</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="item-card">
+          <div class="card-img-placeholder">
+             <i class="fa-solid fa-wallet fa-3x text-muted"></i>
+          </div>
+          <div class="card-content">
+            <h5 class="card-title">กระเป๋าเงิน</h5>
+            <p class="card-location"><i class="fa-solid fa-location-dot me-2"></i>หน้าสโมสรคณะฯ</p>
+            <p class="card-date text-muted"><i class="fa-solid fa-calendar-days me-2"></i>31/12/2568</p>
+            <button class="btn btn-primary w-100" onclick="contact()">ดูรายละเอียด</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="item-card">
+          <div class="card-img-placeholder">
+            <i class="fa-solid fa-mobile-screen-button fa-3x text-muted"></i>
+          </div>
+          <div class="card-content">
+            <h5 class="card-title">โทรศัพท์ iPhone</h5>
+            <p class="card-location"><i class="fa-solid fa-location-dot me-2"></i>โรงอาหาร</p>
+            <p class="card-date text-muted"><i class="fa-solid fa-calendar-days me-2"></i>12/12/2568</p>
+            <button class="btn btn-primary w-100" onclick="contact()">ดูรายละเอียด</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="item-card">
+          <div class="card-img-placeholder">
+            <i class="fa-solid fa-pencil fa-3x text-muted"></i>
+          </div>
+          <div class="card-content">
+            <h5 class="card-title">ปากกา iPad</h5>
+            <p class="card-location"><i class="fa-solid fa-location-dot me-2"></i>โรงอาหาร</p>
+            <p class="card-date text-muted"><i class="fa-solid fa-calendar-days me-2"></i>12/12/2568</p>
+            <button class="btn btn-primary w-100" onclick="contact()">ดูรายละเอียด</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-end mt-4">
+      <a href="all_items.html" class="view-all-link">ดูทั้งหมด →</a>
+    </div>
+  </main>
+
+  <footer class="footer-contact bg-light pt-4 pb-2 mt-5">
+      <div class="container text-center">
+          <h6>ช่องทางการติดต่อ</h6>
+          <p class="mb-1">Facebook: LostAndFoundOfficial | Line: @lostandfound | Tel: 02-123-4567</p>
+      </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

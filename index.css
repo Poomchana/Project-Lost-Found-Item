@@ -1,0 +1,170 @@
+/* --- 1. Global Styles & Variables --- */
+:root {
+  --primary-color: #3B7197;
+  --secondary-color: #4A8DBA;
+  --light-bg: #F4F6F9;
+  --text-dark: #333;
+  --text-light: #666;
+  --border-color: #dee2e6;
+}
+
+body {
+  background-color: var(--light-bg);
+  font-family: 'Sarabun', sans-serif;
+  color: var(--text-dark);
+}
+
+/* --- 2. Header & Navbar --- */
+.header-nav {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 0;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 50px; /* ปรับขนาดโลโก้ให้เล็กลง */
+  margin-right: 15px;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.user-actions .btn {
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* --- 3. Action Links (ปุ่มแจ้งของ) --- */
+.action-links-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.action-link {
+  background-color: white;
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 1.5rem 2.5rem;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+}
+
+.action-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1) !important;
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.action-link .icon {
+  font-size: 1.5rem;
+}
+
+/* --- 4. Section Header (เส้นคั่นหัวข้อ) --- */
+.section-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section-header h3 {
+  color: var(--text-dark);
+}
+
+.header-line {
+  width: 80px;
+  height: 4px;
+  background-color: var(--secondary-color);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* --- 5. Item Card Design --- */
+.item-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.item-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-placeholder {
+  width: 100%;
+  height: 180px;
+  background-color: #e9ecef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* ทำให้ส่วนนี้ขยายเต็มพื้นที่ที่เหลือ */
+}
+
+.card-title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+.card-location, .card-date {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+.card-content .btn {
+  margin-top: auto; /* ดันปุ่มลงไปอยู่ข้างล่างสุดของการ์ด */
+  background-color: var(--primary-color);
+  border: none;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.card-content .btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* --- 6. Links & Footer --- */
+.view-all-link {
+  color: var(--primary-color);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.view-all-link:hover {
+  color: var(--text-dark);
+  text-decoration: underline;
+}
+
+.footer-contact {
+    border-top: 1px solid var(--border-color);
+}
