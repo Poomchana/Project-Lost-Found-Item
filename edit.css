@@ -1,0 +1,73 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+
+.navbar {
+  background-color: #3b7197;
+  color: white;
+  padding: 20px 40px;
+  font-size: 24px;
+  border-radius: 0 0 15px 15px;
+}
+
+/* ปุ่มด้านบน */
+.top-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 60px;
+}
+.btn-back {
+  background-color: #c82333;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn-back:hover { background-color: #a71d2a; }
+
+.btn-save {
+  background-color: #12b512;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn-save:hover { background-color: #0a970a; }
+
+/* ตาราง */
+.table-wrapper {
+  width: 90%;
+  margin: 30px auto;
+  background: white;
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 20px;
+}
+.edit-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.edit-table th, .edit-table td {
+  border: 1px solid #000;
+  text-align: left;
+  padding: 10px;
+}
+.edit-table th {
+  background-color: #e9f2fa;
+  text-align: center;
+}
+input[type="text"] {
+  width: 95%;
+  padding: 8px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
