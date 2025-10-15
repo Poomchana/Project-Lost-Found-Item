@@ -1,5 +1,5 @@
 function goHome() {
-  window.location.href = "index.html";
+  window.location.href = "user-admin.html";
 }
 
 function logout() {

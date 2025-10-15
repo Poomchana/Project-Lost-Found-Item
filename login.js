@@ -1,24 +1,35 @@
-// ฟอร์มเข้าสู่ระบบ
-const loginForm = document.querySelector('.login-form');
-if (loginForm) {
-  loginForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    // สมมติว่ามีการเรียกใช้ฟังก์ชัน showModal และ showPage ที่อื่น
-    showModal('เข้าสู่ระบบสำเร็จ !');
-    setTimeout(() => {
-      closeModal();
-      showPage('profile');
-    }, 2000);
-  });
+// login.js
+
+// ฟังก์ชันเปิดปิดการแสดงรหัสผ่าน
+function togglePassword(id, btn) {
+  const passwordField = document.getElementById(id);
+  const type = passwordField.type === "password" ? "text" : "password";
+  passwordField.type = type;
+  btn.textContent = type === "password" ? "👁" : "🙈";
 }
 
-function togglePassword(inputId, el) {
-  const input = document.getElementById(inputId);
-  if (input.type === 'password') {
-    input.type = 'text';
-    el.textContent = '🙈';    // เปลี่ยนเป็น “ตาหลับ”
+// ฟังก์ชันจัดการการเข้าสู่ระบบ
+function handleLogin(event) {
+  event.preventDefault();  // หยุดการ submit แบบเดิม
+
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+
+  // ตรวจสอบอีเมลและรหัสผ่าน
+  if (email === "user@0000" && password === "0000") {
+    // หากข้อมูลถูกต้องให้ไปที่หน้า all-items.html
+    window.location.href = "all-items.html";  
+  } else if (email === "admin@1234" && password === "1234") {
+    // หากผู้ใช้เป็น admin ให้ไปที่หน้า user-admin.html
+    window.location.href = "user-admin.html";  
   } else {
-    input.type = 'password';
-    el.textContent = '👁'; // เปลี่ยนกลับเป็น “ตาเปิด”
+    alert("อีเมลหรือรหัสผ่านไม่ถูกต้อง");
+  }
+}
+
+// ฟังก์ชันแสดงหน้า 'homepage' (ย้อนกลับไปหน้า homepage)
+function showPage(page) {
+  if (page === 'homepage') {
+    window.location.href = "index.html";  // เปลี่ยนเป็นหน้า homepage หรือหน้าอื่นตามต้องการ
   }
 }

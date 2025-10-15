@@ -72,27 +72,11 @@ body {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* กรอบติดต่อ */
-.contact-box {
-  margin-top: 20px;
-  padding: 15px;
-  background: #ffffff;
-  border-radius: 15px; /* มุมโค้งมน */
-}
-.contact-box:hover {
-  transform: translateY(-3px);
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
-}
-/*ปุ่มแก้ไข*/
-.btn-group {
-  display: flex;
-  justify-content: flex-end; /* ปุ่มทั้งหมดชิดขวา แต่เหลืองจะอยู่ซ้ายของน้ำเงิน */
-  gap: 8px;                  /* ระยะห่างระหว่างปุ่ม */
-}
 
+/*ปุ่มแก้ไข*/
 .btn-edit {
-  background-color: #FFD700;   /* สีเหลืองทอง */
-  color: #000;
+  background-color: #FFD700 !important; 
+  color: #000 !important;
   border: none;
   border-radius: 20px;
   padding: 6px 20px;
@@ -103,9 +87,10 @@ body {
 }
 
 .btn-edit:hover {
-  background-color: #FFC107;   /* เหลืองเข้มเมื่อ hover */
+  background-color: #FFC107 !important;
   transform: scale(1.05);
 }
+
 
 
 /* ปุ่มทั่วไป */
@@ -113,7 +98,7 @@ body {
   border-radius: 5px;
   padding: 6px 20px;
   font-size: 1.2rem;
-  background-color: #194463;
+  background-color: #1d466e;
   color: white;
   border-radius: 20px;
   transition: background-color 0.3s ease, transform 0.2s ease;

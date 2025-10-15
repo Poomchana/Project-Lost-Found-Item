@@ -11,10 +11,10 @@ function closeModal() {
   modal.style.display = "none";
 }
 function goMain() {
-  window.location.href = "index.html"; // ✅ กลับหน้า index ปกติ
+  window.location.href = "all-items.html"; // ✅ กลับหน้า index ปกติ
 }
 
 function goHome() {
   closeModal();
-  window.location.href = "index4.html"; // ✅ ไปหน้า index4 เมื่อเสร็จสิ้นฟอร์ม
+  window.location.href = "all-items.html"; // ✅ ไปหน้า index4 เมื่อเสร็จสิ้นฟอร์ม
 }

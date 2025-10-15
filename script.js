@@ -13,3 +13,18 @@ function editInfo() {
     alert("ยกเลิก");
   }
 }
+
+function edit() {
+  // ไปหน้า
+  window.location.href = "edit.html";
+}
+
+function profileadmin() {
+  // ไปหน้า
+  window.location.href = "profileadmin.html";
+}
+
+function contact() {
+  // ไปหน้า contact.html แทนการแสดง alert
+  window.location.href = "contact.html";
+}

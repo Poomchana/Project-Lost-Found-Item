@@ -1,6 +1,6 @@
 function goHome() {
   // กลับไปหน้า index.html
-  window.location.href = "index.html";
+  window.location.href = "all-items.html";
 }
 
 function openLink(url) {

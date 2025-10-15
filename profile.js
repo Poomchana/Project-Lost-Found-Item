@@ -1,5 +1,5 @@
 function goHome() {
-  window.location.href = "index.html";
+  window.location.href = "all-items.html";
 }
 
 function logout() {

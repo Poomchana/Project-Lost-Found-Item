@@ -27,7 +27,7 @@ body {
 }
 
 .logo-img {
-  width: 50px; /* ปรับขนาดโลโก้ให้เล็กลง */
+  width: 120px; /* ปรับขนาดโลโก้ให้เล็กลง */
   margin-right: 15px;
 }
 
@@ -167,4 +167,23 @@ body {
 
 .footer-contact {
     border-top: 1px solid var(--border-color);
+}
+
+/*ฟอร์มของ*/
+.action-links .action-link {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* ระยะห่างระหว่างไอคอนกับข้อความ */
+  padding: 14px 30px;
+  background-color: #494949; /* ปรับสีตามต้องการ */
+  color: #fff;
+  border-radius: 35px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.action-links .action-link:hover {
+  background-color: #194463;
+  transform: scale(1.05);
 }

@@ -12,7 +12,7 @@ window.onload = () => {
 
 // ✅ ปุ่มกลับ
 function goBack() {
-  window.location.href = "index2.html";
+  window.location.href = "user-admin.html";
 }
 
 // ✅ ปุ่มบันทึก (เสร็จสิ้น)
@@ -34,5 +34,5 @@ function saveData() {
 
   
   alert("✅ บันทึกข้อมูลเรียบร้อยแล้ว!");
-  window.location.href = "index2.html";
+  window.location.href = "user-admin.html";
 }

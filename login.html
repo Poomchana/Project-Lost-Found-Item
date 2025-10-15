@@ -11,14 +11,14 @@
   <div id="login" class="page">
     <div class="auth-container">
 
-      <button class="back-btn" onclick="showPage('homepage')">←</button>
+     <button class="back-btn" onclick="showPage('homepage')">←</button>
 
       <div class="auth-form">
         <h2 class="auth-title">เข้าสู่ระบบ</h2>
 
-        <form class="login-form">
+        <form class="login-form" onsubmit="return handleLogin(event)">
           <div class="form-group">
-            <input type="email" placeholder="อีเมล" required>
+            <input type="email" id="email" placeholder="อีเมล" required>
           </div>
 
           <div class="form-group">
@@ -42,7 +42,6 @@
       </div>
     </div>
   </div>
-
   <script src="login.js"></script>
 </body>
 </html>

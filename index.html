@@ -24,27 +24,23 @@
         <h1 class="logo-text">Lost & Found</h1>
       </div>
       <div class="user-actions">
-        <button class="btn btn-light">เข้าสู่ระบบ</button>
+       <button class="btn btn-light" onclick="window.location.href='login.html'">เข้าสู่ระบบ</button>
       </div>
     </div>
   </header>
 
-  <main class="container my-5">
-    <div class="action-links-wrapper">
-      <a href="#" class="action-link shadow-sm">
-        <i class="fa-solid fa-hands-holding-circle icon"></i>
-        <span>แจ้งของที่เจอ</span>
-      </a>
-      <a href="#" class="action-link shadow-sm">
-        <i class="fa-solid fa-magnifying-glass icon"></i>
-        <span>แจ้งของหาย</span>
-      </a>
-    </div>
+  <div class="action-links d-flex justify-content-center gap-4 mt-4">
+  <a href="login.html" class="action-link shadow-sm">
+    <i class="fa-solid fa-hands-holding-circle icon"></i>
+    <span>แจ้งของที่เจอ</span>
+  </a>
+  <a href="login.html" class="action-link shadow-sm">
+    <i class="fa-solid fa-magnifying-glass icon"></i>
+    <span>แจ้งของหาย</span>
+  </a>
+</div>
+<div class="container mt-5"></div>
 
-    <div class="section-header">
-      <h3 class="fw-bold">รายการล่าสุด</h3>
-      <div class="header-line"></div>
-    </div>
 
     <div class="row g-4">
       <div class="col-lg-3 col-md-6">
@@ -56,7 +52,7 @@
             <h5 class="card-title">หูฟัง</h5>
             <p class="card-location"><i class="fa-solid fa-location-dot me-2"></i>โรงอาหาร</p>
             <p class="card-date text-muted"><i class="fa-solid fa-calendar-days me-2"></i>01/03/2568</p>
-            <button class="btn btn-primary w-100" onclick="contact()">ดูรายละเอียด</button>
+            <button class="btn btn-primary w-100" onclick="details()">ดูรายละเอียด</button>
           </div>
         </div>
       </div>
@@ -70,7 +66,7 @@
             <h5 class="card-title">กระเป๋าเงิน</h5>
             <p class="card-location"><i class="fa-solid fa-location-dot me-2"></i>หน้าสโมสรคณะฯ</p>
             <p class="card-date text-muted"><i class="fa-solid fa-calendar-days me-2"></i>31/12/2568</p>
-            <button class="btn btn-primary w-100" onclick="contact()">ดูรายละเอียด</button>
+            <button class="btn btn-primary w-100" onclick="details()">ดูรายละเอียด</button>
           </div>
         </div>
       </div>
@@ -84,7 +80,7 @@
             <h5 class="card-title">โทรศัพท์ iPhone</h5>
             <p class="card-location"><i class="fa-solid fa-location-dot me-2"></i>โรงอาหาร</p>
             <p class="card-date text-muted"><i class="fa-solid fa-calendar-days me-2"></i>12/12/2568</p>
-            <button class="btn btn-primary w-100" onclick="contact()">ดูรายละเอียด</button>
+            <button class="btn btn-primary w-100" onclick="details()">ดูรายละเอียด</button>
           </div>
         </div>
       </div>
@@ -98,16 +94,13 @@
             <h5 class="card-title">ปากกา iPad</h5>
             <p class="card-location"><i class="fa-solid fa-location-dot me-2"></i>โรงอาหาร</p>
             <p class="card-date text-muted"><i class="fa-solid fa-calendar-days me-2"></i>12/12/2568</p>
-            <button class="btn btn-primary w-100" onclick="contact()">ดูรายละเอียด</button>
+            <button class="btn btn-primary w-100" onclick="details()">ดูรายละเอียด</button>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="text-end mt-4">
-      <a href="all_items.html" class="view-all-link">ดูทั้งหมด →</a>
-    </div>
-  </main>
+  
 
   <footer class="footer-contact bg-light pt-4 pb-2 mt-5">
       <div class="container text-center">
