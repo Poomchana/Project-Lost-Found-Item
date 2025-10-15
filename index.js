@@ -32,4 +32,9 @@ function profile() {
 function details() {
   // ไปหน้า
   window.location.href = "login.html";
+
+}
+function contact() {
+  // ไปหน้า signup.html
+  window.location.href = "contact.html";
 }
